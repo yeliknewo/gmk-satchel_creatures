@@ -8,6 +8,8 @@
   <sprites name="sprites">
     <sprite>sprites\player_stand</sprite>
     <sprite>sprites\player_down</sprite>
+    <sprite>sprites\unwalkable</sprite>
+    <sprite>sprites\unwalkable_debug</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\tileset0</background>
@@ -16,13 +18,19 @@
   <scripts name="scripts">
     <script>scripts\overworld_player_movement.gml</script>
     <script>scripts\overworld_player_create.gml</script>
+    <script>scripts\overworld_player_collision_unwalkable.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\overworld_player</object>
+    <object>objects\overworld_unwalkable</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\start_town</room>
   </rooms>
+  <constants number="2">
+    <constant name="overworld_movement_vspeed">2</constant>
+    <constant name="overworld_movement_hspeed">2</constant>
+  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>
