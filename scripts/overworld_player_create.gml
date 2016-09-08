@@ -4,6 +4,4 @@ with(self) {
     sprite_right = player_down;
     sprite_up = player_down;
     sprite_down = player_down;
-    grid_width = 32;
-    grid_height = 32;
 }

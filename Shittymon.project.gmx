@@ -8,28 +8,43 @@
   <sprites name="sprites">
     <sprite>sprites\player_stand</sprite>
     <sprite>sprites\player_down</sprite>
-    <sprite>sprites\unwalkable</sprite>
-    <sprite>sprites\unwalkable_debug</sprite>
+    <sprite>sprites\prof_stand</sprite>
+    <sprite>sprites\prof_down</sprite>
+    <sprite>sprites\marker_empty</sprite>
+    <sprite>sprites\marker_debug</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\tileset0</background>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\prof_enter_start_town</path>
+  </paths>
   <scripts name="scripts">
     <script>scripts\overworld_player_movement.gml</script>
     <script>scripts\overworld_player_create.gml</script>
     <script>scripts\overworld_player_collision_unwalkable.gml</script>
+    <script>scripts\overworld_prof_create.gml</script>
+    <script>scripts\overworld_prof_enter_start_town.gml</script>
   </scripts>
   <objects name="objects">
-    <object>objects\overworld_player</object>
-    <object>objects\overworld_unwalkable</object>
+    <object>objects\obj_ow_player</object>
+    <object>objects\obj_ow_prof</object>
+    <objects name="overworld">
+      <objects name="marker">
+        <object>objects\marker_template</object>
+        <object>objects\obj_ow_mkr_prof_enter_start_town</object>
+        <object>objects\obj_ow_mkr_unwalkable</object>
+      </objects>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\start_town</room>
   </rooms>
-  <constants number="2">
-    <constant name="overworld_movement_vspeed">2</constant>
-    <constant name="overworld_movement_hspeed">2</constant>
+  <constants number="4">
+    <constant name="OVERWORLD_MOVEMENT_V_SPEED">2</constant>
+    <constant name="OVERWORLD_MOVEMENT_H_SPEED">2</constant>
+    <constant name="TILE_WIDTH">32</constant>
+    <constant name="TILE_HEIGHT">32</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>
