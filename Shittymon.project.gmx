@@ -21,7 +21,7 @@
     <object>objects\overworld_player</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\pallet_town</room>
+    <room>rooms\start_town</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
