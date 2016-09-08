@@ -9,7 +9,9 @@
     <sprite>sprites\player_stand</sprite>
     <sprite>sprites\player_down</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\tileset0</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\overworld_player_movement.gml</script>
