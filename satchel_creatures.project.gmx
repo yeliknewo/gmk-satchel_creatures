@@ -20,11 +20,15 @@
     <path>paths\prof_enter_start_town</path>
   </paths>
   <scripts name="scripts">
-    <script>scripts\overworld_player_movement.gml</script>
-    <script>scripts\overworld_player_create.gml</script>
     <script>scripts\overworld_player_collision_unwalkable.gml</script>
-    <script>scripts\overworld_prof_create.gml</script>
     <script>scripts\overworld_prof_enter_start_town.gml</script>
+    <scripts name="overworld">
+      <script>scripts\overworld_walk.gml</script>
+      <script>scripts\overworld_player_walk.gml</script>
+      <script>scripts\overworld_prof_create.gml</script>
+      <script>scripts\overworld_player_create.gml</script>
+      <script>scripts\overworld_move_to.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <objects name="overworld">
@@ -33,8 +37,10 @@
         <object>objects\obj_ow_mkr_prof_enter_start_town</object>
         <object>objects\obj_ow_mkr_unwalkable</object>
       </objects>
-      <object>objects\obj_ow_player</object>
-      <object>objects\obj_ow_prof</object>
+      <objects name="human">
+        <object>objects\obj_ow_player</object>
+        <object>objects\obj_ow_prof</object>
+      </objects>
     </objects>
   </objects>
   <rooms name="rooms">
