@@ -15,6 +15,7 @@
   </sprites>
   <backgrounds name="background">
     <background>background\tileset0</background>
+    <background>background\tileset1</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\prof_enter_start_town</path>
